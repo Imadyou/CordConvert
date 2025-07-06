@@ -17,14 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
       return false;
     }
 
-    if (x < 6000000 || x > 7700000) {
-      resultDiv.innerHTML = `<p class="error">X (Norring) utanför intervallet 6,000,000 - 7,700,000.</p>`;
+    if (x < 6100000 || x > 7700000) {
+      resultDiv.innerHTML = `<p class="error">X (Norring) utanför intervallet 6,100,000 - 7,700,000.</p>`;
       convertBtn.disabled = true;
       return false;
     }
 
-    if (y < 200000 || y > 900000) {
-      resultDiv.innerHTML = `<p class="error">Y (Östring) utanför intervallet 200,000 - 900,000.</p>`;
+    if (y < 1200000 || y > 1650000) {
+      resultDiv.innerHTML = `<p class="error">Y (Östring) utanför intervallet 1,200,000 - 1,650,000.</p>`;
       convertBtn.disabled = true;
       return false;
     }
