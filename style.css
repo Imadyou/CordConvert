@@ -1,0 +1,112 @@
+body {
+  background-color: #f8f9fa;
+  color: #264653;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  border: 2px solid #2a9d8f;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  color: #2a9d8f;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+label {
+  display: block;
+  margin: 10px 0 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #264653;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  outline: none;
+}
+
+button {
+  background-color: #2a9d8f;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  width: 100%;
+  max-width: 250px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #264653;
+  transform: translateY(-2px);
+}
+
+#result p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  word-wrap: break-word;
+}
+
+#map {
+  height: 300px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid #2a9d8f;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Media Queries för små skärmar */
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    max-width: 100%;
+    font-size: 1rem;
+    padding: 10px 16px;
+  }
+
+  input {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  button {
+    max-width: 200px;
+  }
+}
