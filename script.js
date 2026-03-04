@@ -18,15 +18,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return false;
     }
 
-    if (x < 6100000 || x > 7700000) {
-      resultDiv.innerHTML = `<p class="error">X (Norring) utanför intervallet 6,100,000 - 7,700,000.</p>`;
+    if (x < 6000000 || x > 7800000) {
+      resultDiv.innerHTML = `<p class="error">X (Norring) utanför intervallet 6,000,000 - 7,800,000.</p>`;
       resultDiv.classList.add("error");
       convertBtn.disabled = true;
       return false;
     }
 
-    if (y < 1200000 || y > 1650000) {
-      resultDiv.innerHTML = `<p class="error">Y (Östring) utanför intervallet 1,200,000 - 1,650,000.</p>`;
+    if (y < 1100000 || y > 1655000) {
+      resultDiv.innerHTML = `<p class="error">Y (Östring) utanför intervallet 1,100,000 - 1,655,000.</p>`;
       resultDiv.classList.add("error");
       convertBtn.disabled = true;
       return false;
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     resultDiv.innerHTML = `
       <p><strong>Lat:</strong> ${lat.toFixed(
-        6
+        6,
       )}, <strong>Lon:</strong> ${lon.toFixed(6)}</p>
       <a href="https://www.google.com/maps/search/?api=1&query=${lat},${lon}" target="_blank" rel="noopener">
         <button>Öppna i Google Maps</button>
